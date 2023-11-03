@@ -1,0 +1,190 @@
+:root {
+  font-size: 62.5%;
+
+  /* background colors */
+  --bc-body: rgba(4, 9, 36, 1);
+  --bc-button-bd: rgba(2, 121, 157, 1);
+  --bc-button-hover: rgba(15, 100, 200, 1);
+  --bc-card-fcbutton: rgba(255, 255, 255, 1);
+  --bc-error: rgba(240, 62, 62, 1);
+  --bc-input: rgba(220, 226, 233, 1);
+  
+  /* font colors */
+  --fc-primary-title: rgba(12, 52, 64, 1);
+  --fc-secondary-title: rgba(0, 69, 58, 1);
+  --fc-primary-input: rgba(33, 37, 41, 1);
+  --fc-secondary-inputbd: rgba(73, 80, 87, 0.50);
+
+  /* font family */
+  --ff-body: 'Roboto', sans-serif;
+
+  /* font sizes */
+  --fs-general: 1.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bc-body);
+  font-family: var(--ff-body);
+}
+
+body, input, button {
+  font-size: var(--fs-general);
+  line-height: 2rem;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  background: var(--bc-card-fcbutton);
+  padding: 4.8rem 6.4rem 6.4rem;
+  max-width: 42.8rem;
+  margin-inline: auto;
+
+  border-radius: .6rem;
+  box-shadow: 0 .2rem .4rem 0 rgba(0, 0, 0, 0.10);
+}
+
+form {
+  width: 30rem;
+}
+
+.title {
+  color: var(--fc-primary-title);
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+form a {
+  text-decoration: none;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.input-wrapper label {
+  color: var(--fc-secondary-title);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.input-wrapper input {
+  padding: 1.6rem;
+  border-radius: .4rem;
+  border-style: none;
+  border: .1rem solid var(--fc-secondary-inputbd);
+}
+
+.input-wrapper input:focus {
+  color: var(--fc-primary-input); 
+  outline: .2rem solid var(--bc-button-bd);
+}
+
+.input-wrapper input::placeholder {
+  color: var(--fc-secondary-inputbd);
+}
+
+form button {
+  /* button */
+  display: flex;
+  gap: .8rem;
+  width: 30rem;
+  border-style: none;
+  padding: 1.6rem;
+  display: flex;
+  place-content: center;
+  background-color: var(--bc-button-bd);
+  border-radius: .4rem;
+  cursor: pointer;
+  transition: background .3s;
+  /* font */
+  color: var(--bc-card-fcbutton);
+  font-weight: 700;
+}
+
+form button:hover {
+  background: var(--bc-button-hover);
+}
+
+/* Modal */
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-wrapper {
+  position: absolute;
+  inset: 0; /* equivalente a top, bottom, right e left = 0*/
+  background: rgba(0, 0, 0, 0.7);
+  /* alinhar ao meio tendo apenas um elemento na caixa */
+  display: grid;
+  place-content: center;
+  /* visualização da caixa */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  position: relative;
+}
+
+.modal button {
+  background: none;
+  border: none;
+
+  position: absolute; /* relativo ao pai, ou seja, ao modal */
+  top: 1.6rem;
+  right: 1.6rem;
+
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.modal button:hover {
+  transform: scale(1.1);
+}
+
+/* Alert error */
+.alert-error.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.alert-error {
+  position: absolute;
+  background-color: var(--bc-error);
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  padding: .8rem 0;
+  font-weight: bold;
+  /* vizualização do alerta */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: transform .5s;
+} 
