@@ -1,4 +1,4 @@
-<h1 align="center"> Focus Timer </h1>
+<h1 align="center"> BMI Calculator </h1>
 
 <p align="center">
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -57,7 +57,7 @@ by Patricia Melo
 <br>
 <br>
 
-<h1 align="center"> Timer de Foco </h1>
+<h1 align="center"> Calculadora de IMC </h1>
 
 <p align="center">
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
