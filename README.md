@@ -32,7 +32,7 @@ This project was developed with the following technologies:
 
 ## Project
 
-Developed a BMI Calculator, where you can obtain your Body Mass Index by entering your weight and height, making it possible to compare it with the available reference table. [click here](https://pcbandeira-m.github.io/imc-calculator/).
+Developed a BMI Calculator, where you can obtain your Body Mass Index by entering your weight and height, making it possible to compare it with the available reference table. [click here](https://astounding-kitsune-26c795.netlify.app).
 
 ## Layout
 
@@ -92,7 +92,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 Foi desenvolvida uma calculadora de IMC, podendo obter seu Índice de Massa Corpotal ao informar peso e altura e sendo possível comparar com a tabela de referência disponível.
 
-- Para acessar o projeto finalizado, [clique aqui](https://pcbandeira-m.github.io/imc-calculator/).
+- Para acessar o projeto finalizado, [clique aqui](https://astounding-kitsune-26c795.netlify.app).
 
 ## Layout
 
